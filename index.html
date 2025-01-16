@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passaggi GTT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header class="text-center text-white py-5 bg-primary rounded-3 shadow-lg mb-5">
+            <h1 class="display-4">Passaggi GTT</h1>
+            <p class="lead">Inserisci il numero della fermata per ottenere gli orari dei passaggi!</p>
+        </header>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" id="input" class="form-control form-control-lg rounded-start" placeholder="Numero fermata">
+                    <button class="btn btn-lg btn-warning rounded-end" onclick="cerca()">Cerca</button>
+                </div>
+            </div>
+        </div>
+        <div id="risultati" class="row justify-content-center"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
